@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+        <title>后台登录页面</title>
+        <!-- 导入layui -->
+        <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
+        <link rel="stylesheet" href="assets/css/login.css"></link>
+        <script type='text/javascript' src="assets/lib/layui/layui.all.js"></script>
+        <script src="assets/lib/jquery.js"></script>
+        <script type='text/javascript' src="assets/js/baseAPI.js"></script>
+        <script type="text/javascript" src="assets/js/login.js"></script>
+    </head>
+    <body>
+        <!-- 头部 logo 区域 -->
+        <div class="layui-main logo">
+            <img src="./assets/images/logo.png" alt="">
+            <div class="logo_text">欢迎来到小米登录系统</div>
+        </div>
+
+        <!-- 登录注册区域 -->
+        <div class="loginAndRegBox">
+            <div class="loginBox_header">小米后台登录系统</div>
+            <form class="layui-form" id="form_login">
+                <div class="loginBox_ipt">
+                    <div class="loginBox_box">
+                        <span class="text">用户：</span>
+                        <i class="layui-icon layui-icon-username yh"></i>   
+                        <input type="text" name="username" lay-verify="required">
+                    </div>
+                    <div class="loginBox_box">
+                        <span class="text">密码：</span>
+                        <i class="layui-icon layui-icon-password"></i>   
+                        <input type="password" name="password" lay-verify="required|pwd">
+                    </div>
+                    <div class="loginBox_box confirmCode" style="display: none;">
+                        <span class="text">确认密码：</span>
+                        <i class="layui-icon layui-icon-password"></i>  
+                        <input type="password" >
+                    </div>
+                </div>
+                <div class="loginBox_foot">
+                    <button class="layui-btn layui-btn-normal login_btn"  lay-submit>登录</button>
+                </div>
+                <div class="loginBox_enroll">
+                    <a href="javascript:;" id="enroll">去注册登录</a>
+                    <a href="javascript:;" id="login">去登录</a>
+                </div>
+            </div>
+            </form>
+            
+        
+    </body>
+</html>

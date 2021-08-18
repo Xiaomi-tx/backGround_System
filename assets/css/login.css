@@ -1,0 +1,117 @@
+/** @format */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../images/topimage.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+.logo .logo_text {
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.loginAndRegBox {
+  overflow: hidden;
+  width: 500px;
+  height: 350px;
+  background-color: #34495e;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+.loginAndRegBox .loginBox_header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  background-color: #2c3e50;
+}
+
+.loginAndRegBox .loginBox_ipt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 180px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.loginAndRegBox .loginBox_ipt .loginBox_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+
+.loginAndRegBox .loginBox_ipt .loginBox_box input {
+  border-radius: 10px;
+  height: 30px;
+  width: 280px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding-left: 26px;
+}
+.loginAndRegBox .loginBox_ipt .loginBox_box i {
+  left: 118px;
+  position: absolute;
+  color: #eb9533;
+}
+
+.loginAndRegBox .loginBox_ipt .loginBox_box .text {
+  display: block;
+  width: 20%;
+  text-align: right;
+  color: #fff;
+}
+
+.loginAndRegBox .loginBox_foot {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.loginAndRegBox .loginBox_foot button {
+  width: 100%;
+}
+
+.loginAndRegBox .loginBox_enroll {
+  width: 80%;
+  height: 20px;
+  margin: 10px auto;
+}
+.loginAndRegBox .loginBox_enroll a {
+  /* display: block; */
+  color: #fff;
+  cursor: pointer;
+  float: right;
+}
+
+#login {
+  display: none;
+}
