@@ -3,5 +3,19 @@
 
 $.ajaxPrefilter(function (opt) {
     opt.url = "http://api-breakingnews-web.itheima.net" + opt.url;
-    console.log(opt.url);
+    if (opt.url.indexOf('/my/') != -1) {
+        opt.headers = {
+            Authorization:localStorage.getItem("token") || "",
+        }
+    }
+
+    // 全集统一挂载 complete 回调函数
+    opt.complete = res => {
+        if (res.responseJSON.status == 1 && res.responseJSON.message == "身份认证失败！") {
+            // 1. 强制清空 token
+            localStorage.removeItem("token");
+            // 2. 强制跳转
+            location.href = "/login.html";
+        }
+    }
 }) 
